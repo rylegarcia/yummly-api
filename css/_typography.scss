@@ -1,0 +1,14 @@
+@mixin header-style ($color, $size, $ls) {
+	font-family: 'Rufina', serif;
+	color: $color;
+	font-size: $size;
+	letter-spacing: $ls;
+}
+
+@mixin body-style ($color, $size, $ls) {
+	font-family: 'Sintony', sans-serif;
+	color: $color;
+	font-size: $size;
+	letter-spacing: $ls;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WCGL?</title>
+	<link href='http://fonts.googleapis.com/css?family=Rufina|Sintony:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/select-theme-default.css">
+	<link rel="stylesheet" href="css/select-theme-chosen.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/png" href="plate.png">
+</head>
+<body>
+
+	<header>
+		<div class="header-container">
+			<h1>What's cookin', good lookin'?</h1>
+		</div>
+		<div class="food-choice-container">
+			<label for="food-choice"></label>
+			<select name="food-choice" id="food-choice">
+					<option value="meal-type">choose your meal...</option>
+			 	  <option value="rice" id="rice">Rice</option>
+			    <option value="pasta">Pasta</option>
+			    <option value="stir-fry">Stir Fry</option>
+			    <option value="bbq">BBQ</option>
+			    <option value="burger">Burger</option>
+			    <option value="salad">Salad</option>
+			    <option value="dessert">Dessert</option>
+			    <option value="shakes">Shakes</option>
+			    <option value="vegetarian">Vegetarian</option>
+			</select>
+			<form action="" class="search">
+			  <label for="search"></label>
+			  <input type="search" name="search" id="search" placeholder="search for more">
+			</form>
+		</div>
+		<div class="arrow-container">
+			<a href="#recipe-container"><i class="fa fa-angle-down fa-4x animated bounce infinite"></i></a>
+		</div>
+	</header>
+
+	<section class="recipe-container">
+		<div class="wrapper" id="recipe-container"></div>
+		<div class="button-container">
+			<div class="buttonPrev button"><p>prev</p></div>
+			<div class="buttonNext button"><p>next</p></div>
+		</div>
+	</section>
+
+	<section class="user-selection">
+		<div class="wrapper-user" id="selection-container"></div>
+	</section>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/select.min.js"></script>
+<script src="js/jquery.smooth-scroll.js"></script>
+<script src="js/app.js"></script>
+<script>
+	Select.init({
+		className: 'select-theme-chosen'
+	});
+</script>
+
+</body>
+</html>
